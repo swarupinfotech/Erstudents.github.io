@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwarupInfotech</title>
+
+    <!-- favicon link -->
+    <link rel="icon" href="images/favicon-16x16.png" />
+
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&family=Lato:wght@300;400&family=Mulish:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome link  -->
+    <script
+      src="https://kit.fontawesome.com/e653c7cf97.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">All Study Materias</span>
+        <div class="head">
+          <h3 class="head-links">
+            <a class="head-link" href="index.html">Home</a>
+          </h3>
+          <h3 class="head-links">
+            <a class="head-link" href="../lectures/lecture-home.html">Videos</a>
+          </h3>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">All Materias</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="index.html" class="nav-link active-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">Home</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="pages/_syllabus.html" class="nav-link">
+                <i class="fa-brands fa-books icon"></i>
+                <span class="link">Syllabus</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="./pages/_books.html" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="link">Books and Notes</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="./pages/_ques_page.html" class="nav-link">
+                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                <span class="link">Previous year questions</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-content">
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link sidebar-links">Home</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="../lectures/lecture-home.html" class="nav-link">
+                <img
+                  class="sidebar-images"
+                  src="../images/video.png"
+                  alt="Bootstrap"
+                />
+
+                <span class="link sidebar-links">Videos</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </nav>
+
+    <section class="overlay"></section>
+    <div class="content">
+      <div class="content-heading-1">
+        <h1>SwarupInfotech Premium Study Material Provider </h1>
+      </div>
+      <img class="content-inside-images" src="images/pic1.png" />
+      <img class="content-inside-images" src="images/pic2.png" />
+      <img class="content-inside-images" src="images/pic1.svg" />
+      <img class="content-inside-images" src="images/pic2.svg" />
+
+      <div class="content-inside-1">
+        <ul class="content-lists">
+          <h4>SWARUPINFOTECH FACILITIES</h4>
+          <li class="content-list">
+            To Provide Hand Written notes, Subject-wise books, syllabus and pervious year Question Paper for those students who are
+            currently pursuing their B.tech Course in Any branch of Engineerinf students.
+            
+          </li>
+          <li class="content-list">
+            To help students in their journey of B.tech in any Branch.
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-heading-2">
+        <h1>Wishing you all the best for your journey of learning</h1>
+      </div>
+
+      <div class="content-inside-2">
+        <li>
+          If anything goes wrong in the site you can contact me
+          <a class="content-link" href="https://chat.whatsapp.com/CoQnC6XsMKgJos5jP1EFUU"
+            >here</a
+          >
+        </li>
+      </div>
+    </div>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

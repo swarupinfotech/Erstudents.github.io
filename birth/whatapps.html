@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#contact {
+        height: auto;
+        margin: 0 10%;
+        width: 80%;
+        position: relative;
+        justify-content: center;
+        z-index: 2;
+        }
+        #contact  div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: calc(100vh - 100px);
+        }
+        #contact form {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+        transition: 0.5s;
+        padding: 20px;
+        border-radius: 6px;
+        box-shadow: 0 0 50px rgba(0,0,0,0.4);
+        
+        }
+        #contact form:hover {
+        background-color: #675afe;
+        }
+        label {
+        padding: 5px 0;
+        }
+        form:hover label {
+        color: #fff;
+        }
+        textarea,input {
+        padding: 5px;
+        outline: 0;
+        border-radius: 6px;
+        border: 2px solid #675afe;
+        
+        }
+        textarea {
+        margin-bottom: 10px;
+        resize: none;
+        }
+        input[type="submit"]{
+        background-color: #675afe;
+        color: #fff;
+        border: 2px solid #fff;
+        cursor: pointer;
+        transition: 0.5s;
+        
+        }
+        input[type="submit"]:hover {
+        border: 2px solid #fff;
+        }
+        </style>
+</head>
+<body>
+    <section id="contact">
+        <p class="tittle-section">contact</p>
+        <h1 class="sub-tittle-section">contactez-nous</h1>
+        <div>
+            <form action="">
+                <label>Adresse Mail</label>
+                <input type="text" placeholder="Ex: azerty@gmail.com">
+                <label>Message</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <div class="sociale">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="mailto:swarupmahato948@gmail.com" class="messaging-button"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="tel:+919142922542" class="messaging-button"><i class="fas fa-phone"></i></a></li>
+                    <li><a href="https://web.whatsapp.com/send?phone=+919142922542" target="_blank" class="messaging-button"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="images-contact">
+                <img src="image/image-contact.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
